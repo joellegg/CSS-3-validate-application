@@ -7,28 +7,38 @@
 	<link rel="stylesheet" type="text/css" href="validation.css">
 </head>
 <body>
-	<form action="" method="post">
-		<legend>-Personal Info-</legend>
+	<fieldset>
+	<form class="bank_app" action="" method="post">
+		<h2>Loan Application</h2>
 			<!-- First Name, Middle Initial, Last Name -->
-			<div>
-			  <label for="first-name">First Name:</label>
-			  <input id="first-name" type="text">
+		    <div>
+		      <label for="first_name">First Name:</label>
+		      <input placeholder="First Name" type="text" id="first_name" name="first_name" required>
+		    </div>
+		    <div>
 			  <label for="middle-initial">Middle Initial:</label>
-			  <input id="middle-initial" type="text">
+			  <input placeholder="Middle Initial" id="middle-initial" type="text" required>
+			</div>
+			<div>  
 			  <label for="last-name">Last Name:</label>
-			  <input id="last-name" type="text">
+			  <input placeholder="Last Name" id="last-name" type="text" required>
 			</div>
 			<!-- Address, Occupation, Employer, Employer Address -->
 			<div>
 			  <label for="address">Address:</label>
-			  <input id="address" type="text">
+			  <input placeholder="Address" id="address" type="text" required>
+			</div>	
+			<div>  
 			  <label for="Occupation">Occupation:</label>
-			  <input id="Occupation" type="text">
-			  <br>
+			  <input placeholder="Occupation" id="Occupation" type="text" required>
+			</div>
+			<div>
 			  <label for="Employer">Employer:</label>
-			  <input id="Employer" type="text">
+			  <input placeholder="Employer:" id="Employer" type="text" required>
+			</div>
+			<div>  
 			  <label for="Employer_Address">Employer Address:</label>
-			  <input id="Employer_Address" type="text">
+			  <input id="Employer_Address" type="text" required>
 			</div>
 			<!-- Loan Purpose -->
 			<div>
@@ -43,11 +53,11 @@
 			<!-- Amount Requested -->
 			<div>
 				<label for="Amount_requested">Amount Requested:</label>
-			  	<input id="Amount_requested" type="text">
+			  	<input placeholder="300,000.00" id="Amount_requested" type="text" required>
 			</div>
 			<!-- Term length -->
 			<div>
-				<label for="term">Length of Loan:</label>
+				<label for="term">Loan Term</label>
 			  	<input type="radio" name="term" value="years5" checked>5 years
 			  	<input type="radio" name="term" value="years15">15 years
 			  	<input type="radio" name="term" value="years30">30 years
@@ -72,7 +82,8 @@
 				<label for="LinkedIn">LinkedIn URL:</label>
 			  	<input id="LinkedIn" type="text">
 			</div>
-	  		<input type="submit" value="Submit">
-	</form> 
+	  		<button class="submit" type="submit">Submit Form</button>
+	</form>
+	</fieldset> 
 </body>
 </html>

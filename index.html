@@ -1,0 +1,78 @@
+<!-- Simple form which will send a POST request -->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Banking Form</title>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+	<form action="" method="post">
+		<legend>-Personal Info-</legend>
+			<!-- First Name, Middle Initial, Last Name -->
+			<div>
+			  <label for="first-name">First Name:</label>
+			  <input id="first-name" type="text">
+			  <label for="middle-initial">Middle Initial:</label>
+			  <input id="middle-initial" type="text">
+			  <label for="last-name">Last Name:</label>
+			  <input id="last-name" type="text">
+			</div>
+			<!-- Address, Occupation, Employer, Employer Address -->
+			<div>
+			  <label for="address">Address:</label>
+			  <input id="address" type="text">
+			  <label for="Occupation">Occupation:</label>
+			  <input id="Occupation" type="text">
+			  <br>
+			  <label for="Employer">Employer:</label>
+			  <input id="Employer" type="text">
+			  <label for="Employer_Address">Employer Address:</label>
+			  <input id="Employer_Address" type="text">
+			</div>
+			<!-- Loan Purpose -->
+			<div>
+				<label for="select">Loan Purpose:</label>
+				<select name="select">
+				  <option value="Commercial">Commercial</option> 
+				  <option value="Real-estate" selected>Real Estate</option>
+				  <option value="Personal">Personal</option>
+				  <option value="Mortgage">Mortgage</option>
+				</select>
+			</div>
+			<!-- Amount Requested -->
+			<div>
+				<label for="Amount_requested">Amount Requested:</label>
+			  	<input id="Amount_requested" type="text">
+			</div>
+			<!-- Term length -->
+			<div>
+				<label for="term">Length of Loan:</label>
+			  	<input type="radio" name="term" value="years5" checked>5 years
+			  	<input type="radio" name="term" value="years15">15 years
+			  	<input type="radio" name="term" value="years30">30 years
+			</div>
+			<!-- Additional comments -->
+			<div>
+				<label for="textarea">Additional Comments:</label><br>
+				<textarea name="textarea" rows="10" cols="40"></textarea>
+			</div>
+			<!-- Applicant email address -->
+			<div>
+				<label for="email">Email:</label>
+			  	<input id="email" type="text">
+			</div>
+			<!-- Applicant telephone number -->
+			<div>
+				<label for="phone-number">Phone Number:</label>
+			  	<input id="phone-number" type="text">
+			</div>
+	 		<!-- Applicant LinkedIn URL -->
+			<div>
+				<label for="LinkedIn">LinkedIn URL:</label>
+			  	<input id="LinkedIn" type="text">
+			</div>
+	  		<input type="submit" value="Submit">
+	</form> 
+</body>
+</html>

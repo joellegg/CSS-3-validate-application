@@ -70,17 +70,17 @@
 			<!-- Applicant email address -->
 			<div>
 				<label for="email">Email:</label>
-			  	<input placeholder="johnsmith@example.com" id="email" type="text" required>
+			  	<input placeholder="johnsmith@example.com" id="email" type="email" required>
 			</div>
 			<!-- Applicant telephone number -->
 			<div>
 				<label for="phone-number">Phone Number:</label>
-			  	<input placeholder="(555)-555-5555" id="phone-number" type="text" required>
+			  	<input type='tel' pattern='[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{4}' title='Phone Number (Format: +9(999)999-9999)' placeholder="+9(999)999-9999" required>
 			</div>
 	 		<!-- Applicant LinkedIn URL -->
 			<div>
 				<label for="LinkedIn">LinkedIn URL:</label>
-			  	<input placeholder="http://linkedin.com/johnsmith" id="LinkedIn" type="text" required>
+			  	<input placeholder="http://linkedin.com/johnsmith" id="LinkedIn" type="url" required>
 			</div>
 	  		<button class="submit" type="submit">Submit Form</button>
 	</form>
